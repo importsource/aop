@@ -4,9 +4,13 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+import com.importsource.aop.core.annotation.AOP;
+
 
 /**
- * 代理委托接口实现
+ * 
+ * 
+ * @author Hezf
  */
 public class SimpleInvocationHandler implements InvocationHandler {
 
@@ -51,13 +55,5 @@ public class SimpleInvocationHandler implements InvocationHandler {
 		return retObj;
 	}
 
-	private boolean exist(Annotation[] annotations, String string) {
-		boolean flag = false;
-		for (int j = 0; j < annotations.length; j++) {
-			String val = ((AOP) annotations[j]).value();
-			flag = val.equals(string);
-		}
-		return flag;
-	}
 
 }
