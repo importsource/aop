@@ -1,15 +1,16 @@
-package com.importsource.aop;
+package com.importsource.aop.core;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+import com.importsource.aop.client.Aspect;
 import com.importsource.aop.core.annotation.AOP;
 
 
 /**
- * 
- * 
+ * 本类中加入了切面逻辑
+ * <p>
  * @author Hezf
  */
 public class SimpleInvocationHandler implements InvocationHandler {

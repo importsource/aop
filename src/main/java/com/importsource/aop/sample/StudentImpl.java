@@ -1,4 +1,4 @@
-package com.importsource.aop;
+package com.importsource.aop.sample;
 
 public class StudentImpl implements Student {
 	

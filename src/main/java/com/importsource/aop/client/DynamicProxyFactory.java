@@ -1,9 +1,11 @@
-package com.importsource.aop;
+package com.importsource.aop.client;
 
 import java.lang.reflect.Proxy;
 
+import com.importsource.aop.core.SimpleInvocationHandler;
+
 /**
- * 代理工厂类
+ * 客户端需要使用这个工厂类来生成逻辑实例，然后做下一步操作。
  * 
  * @author Hezf
  */

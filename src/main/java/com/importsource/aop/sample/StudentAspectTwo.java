@@ -1,4 +1,6 @@
-package com.importsource.aop;
+package com.importsource.aop.sample;
+
+import com.importsource.aop.client.Aspect;
 
 public class StudentAspectTwo implements Aspect{
 	public void doAfter() {
